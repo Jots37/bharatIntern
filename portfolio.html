@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./newStyle.css" />
+    <link rel="icon" type="image/x-icon" href="/images/OCEAN-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ocean-vid">
+        <h1>OCEAN</h1>
+        <h2>vibes</h2>
+        <h3>simple and effective design</h3>
+        <div class="video-div">
+          <video autoplay loop muted plays-inline width="100%">
+            <source src="/Images/ocean.mp4" type="video/ogg" />
+          </video>
+        </div>
+      </div>
+
+      <div class="ocean-components">
+        <div class="comp1" onclick="toIntro()">
+          Introduction <br /><i class="fas fa-water teal-color"></i>
+        </div>
+        <div class="comp1" onclick="toGallery()">
+          Gallery <br /><i class="fas fa-images teal-color"></i>
+        </div>
+        <div class="comp1" onclick="toTestimonials()">
+          Testimonials <br /><i class="fas fa-smile teal-color"></i>
+        </div>
+        <div class="comp1" onclick="toAbout()">
+          About <br /><i class="fas fa-list teal-color"></i>
+        </div>
+        <div class="comp1" onclick="toContact()">
+          Contact<br />
+          <i class="fas fa-comments teal-color"></i>
+        </div>
+      </div>
+
+      <div id="intro" class="main">
+        <div class="outer">
+          <button class="return" onclick="toReturn()">
+            Return Home <b>X</b>
+          </button>
+          <div class="intro-inner">
+            <div>
+              <img
+                src="/Images/surf.jpg"
+                height="615"
+                width="300 "
+                alt="surf"
+              />
+            </div>
+            <div class="two-divs">
+              <div>
+                <h2>Introducing Ocean Vibes</h2>
+                <p>
+                  This CSS template is 100% free provided by TemplateMo website.
+                  You can use this template for any purpose. You can apply this
+                  as a CMS theme or a custom website builder template. <br />
+                  <br />
+                  You can support our website by contributing a little via
+                  <b>PayPal</b> or spreading a word about TemplateMo to your
+                  friends. If you have any question, feel free to send us a
+                  message.<br />
+                  <br />
+
+                  <b>Credit</b> goes to Pexels for the video banner and images
+                  used in this template. Some images are taken from Unsplash.
+                  Both Pexels and Unsplash are great websites for free
+                  photos.<br />
+                  <br />
+                </p>
+              </div>
+              <div class="div2">
+                <p>
+                  You are not allowed to re-distribute this template as a
+                  downloadable ZIP file on any template collection website.
+                  <br />
+                  <br />
+                  Top right corner is a return home with an icon that will close
+                  this pop-up page. <br />
+                  <br />
+                  Next Page will bring you to the gallery page directly without
+                  going back to main menu.
+                </p>
+                <br /><br />
+                <br />
+
+                <button onclick="toGallery()">Next Page</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="main">
+        <div class="outer">
+          <button class="return" onclick="toHome()">
+            Return Home <b>X</b>
+          </button>
+
+          <div class="gallery-inner">
+            <div class="inside-gallery">
+              <div class="images" id="imageContainer"></div>
+              <div class="next-btns">
+                <button onclick="showCollection(0)">1</button>
+                <button onclick="showCollection(1)">2</button>
+                <button onclick="showCollection(2)">3</button>
+                <button onclick="showCollection(3)">4</button>
+              </div>
+            </div>
+
+            <div class="div2">
+              <h2>Gallery</h2>
+              <a href="#" data-category="all" onclick="showCategory('all')"
+                ><i class="fas fa-list teal-color"></i>All</a
+              ><br />
+              <a
+                href="#"
+                data-category="portraits"
+                onclick="showCategory('portraits')"
+                ><i class="fas fa-user teal-color"></i>Portraits</a
+              ><br />
+              <a
+                href="#"
+                data-category="nature"
+                onclick="showCategory('nature')"
+                ><i class="fas fa-leaf teal-color"></i>Nature</a
+              ><br />
+              <a
+                href="#"
+                data-category="animals"
+                onclick="showCategory('animals')"
+                ><i class="fas fa-paw teal-color"></i>Animals</a
+              ><br />
+              <a
+                href="#"
+                data-category="buildings"
+                onclick="showCategory('buildings')"
+                ><i class="fas fa-building teal-color"></i>Buildings</a
+              >
+              <br />
+              <p>
+                Different icons are used for different categories. There are 4
+                or more pages of photos in this gallery. Each thumbnail has a
+                nice hover effect.<br /><br />
+
+                Proin lacus enim, finibus sed magna a, molestie lacinia est.
+                Maecenas id dolor lorem. Donec sodales ex velit.
+              </p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+            <div id="testimonial" class="main">
+              <div class="outer">
+                <button class="return" onclick="fromT()">
+            Return Home <b>X</b>
+          </button>
+          <h2>Testimonials</h2>
+          <div class="testimonial-inner">
+           
+             
+              <div class="test1" >
+             
+              <p>
+                OCEAN vibes is free website template from <b style="color: rgb(79, 174, 198)">TemplateMo</b> website.
+                You are allowed to use it for commercial purpose. You can
+                convert this template as a CMS theme or a custom website builder
+                template.<br/><br/>
+
+                 <i style="color: rgb(142, 140, 140);">You may support us by telling your friends about our
+                TemplateMo site. Feel free to contact us if you have anything to
+                ask. </i><br/><br/>
+                
+                You can make a little contribution via <b>PayPal</b> or saying
+                about TemplateMo to your friends. Duis egestas lorem eu nisi
+                finibus, sit amet elementum lacus pretium.<br/><br/>
+                
+                In tempor felis vitae
+                nulla feugiat aliquam. Vivamus vitae congue mi. Sed maximus
+                velit vestibulum nisl condimentum hendrerit.</p></div>
+                
+                <div class="test2">
+                  <img src="/Images/building/testimonial-01.jpg" alt="testimonial" height="200" width="350">
+                  <p><br/>
+                 "Suspendisse
+                eu mollis diam, at ullamcorper diam. Ut sit amet arcu metus.
+                Nullam mattis eros eget." by <i style="color: rgb(79, 174, 198)">George, Chief Editor</i><br/></br>
+                 "Quisque et
+                lorem accumsan, sollicitudin dolor vel, facilisis eros. Donec
+                aliquet felis in mollis egestas." by<i style="color: rgb(79, 174, 198);"> Mary, CEO of Web</i> </p> <br/></br>
+                
+                <a href="/contact.html" class="contact">Contact Us</a></div>
+
+                <div class="test3">
+                  <p>
+                Duis sapien diam, eleifend eget vehicula sed, convallis sit amet
+                elit. Aenean condimentum vulputate porta.</br></br>
+
+                 Mauris accumsan erat ante, id sagittis felis gravida vitae.Sed iaculis tincidunt
+                neque, a molestie magna vehicula at. </br></br>
+                Phasellus ornare magna nec nulla pharetra, nec tristique elit lobortis.</p><br/><br/>
+
+                <img src="/Images/building/testimonial-02.jpg" alt="testimonial" height="200" width="350">
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+                <div id="about" class="main">
+              <div class="outer">
+                <button class="return" onclick="fromAb()">
+            Return Home <b>X</b></button>
+
+              <div>
+                 <h2>About Ocean Vibes</h2>
+                <div class="about-inner">
+                  <div>
+                  <img src="/Images/about.jpg" alt="about" height="250" width="500">
+                  <p>Suspendisse sit amet pellentesque nunc. Vivamus fringilla tellus finibus lacus blandit, siet amet aliquet augue sagittis. Duis nec auctor felis, nec ornare ex. In non ante ligula.<br/> <br/>
+                    Curabitur non augue dignissim est pulvibar lobortis. Nunc vulputate, mi vel cursus mollis, justo mauris rutrum dui, id egestas ante ligula id nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></div>
+
+
+                  <p>You are NOT allowed to re-distribute this template ZIP file on any website that <i style="color: rgb(79, 174, 198);">collects and reposts</i> free templates from many different websites.<br/><br/>
+                  
+                  Pellentesque vitae ipsum vel risus molestie cursus nec quis lectus. Duis egestas lorem eu nisi finibus, sit amet elementum lacus pretium. In tempor felis vitae nulla feugiat aliquam.<br/><br/>
+                
+                If you need a working HTML contact form, please visit our contact page.<br/><br/> <br/>
+              <a href="/contact.html" class="contact">Contact Us</a></p>
+                </div>
+
+              </div>
+            </div></div></div>
+               <div id="contact" class="main">
+      <div class="outer">
+        <button class="return" onclick="fromCon()">
+          Return Home <b>X</b>
+        </button>
+        <div>
+          <h2>Contact Us</h2>
+          <div class="contact-inner">
+            <form action="">
+              <input type="text" placeholder="Full Name" /><br/>
+              <input type="text" placeholder="Email" /><br/>
+              <select><br/>
+                <option selected style="color: grey;">About</option>
+                <option>Sales & Marketing</option>
+                <option>Creative Design</option>
+                <option>UI/UX</option>
+              </select><br/>
+              <textarea placeholder="Message" rows="10" cols="33"></textarea><br/>
+              <button type="submit" class="contact" >send it now</button>
+            </form>
+          
+        
+        <div class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d58756.987128414774!2d-43.385296!3d-23.012325!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1708277297350!5m2!1sen!2sus" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>110-220 Nam vel ultricies mauris,<br/> Et gravida eros 10220</p><br/><br/><br/>
+          <a href="#"><b><i class="fas fa-phone teal-color"></i></b></i> Tel: 010-020-0340</a><br/><br/>
+          <a href="#"><b>@</b>  Email: info@company.com</a><br/><br/>
+          <a href="#"><i class="fas fa-url teal-color"></i> <b>URL:</b> www.company.com</a>
+        </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+          
+          
+          
+      </div>
+    </div>
+
+    <script src="/portfolio.js"></script>
+      
+
+      
+      
+   
+  </body>
+</html>
